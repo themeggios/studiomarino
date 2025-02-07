@@ -35,7 +35,7 @@ require "db/db.php";
 $sql = "SELECT * FROM animalimarini;";
 $result = $conn->query($sql);
 
-// crea una tabella per visualizzare le ricette
+// crea una tabella 
 echo '<table>';
 echo '<tr><th>Nome</th><th>Lat</th><th>Lon</th><th>Specie</th><th>Descrizione</th><th>Avvistamento</th></tr>';
 
