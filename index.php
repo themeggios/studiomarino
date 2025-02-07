@@ -1,5 +1,7 @@
-<html>
-<body>
+<?php
+require "db/db.php";
+require "public/navbar.php";
+?>
 
 <p><b>Ricerca AJAX</b></p>
 <form action="">
@@ -27,9 +29,6 @@
 </script>
 
 <?php
-
-// connessione al database
-require "db/db.php";
 
 // prepara ed esegue la query
 $sql = "SELECT * FROM animalimarini;";
