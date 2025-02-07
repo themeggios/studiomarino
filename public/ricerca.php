@@ -11,7 +11,7 @@ if (isset($_GET['query'])) {
     $output = '';
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $output .= '<p>' . $row['Nome'] . ' - ' . $row['Descrizione'] . ' - ' . $row['Latitudine'] . ' - ' . $row['Longitudine'] . ' - ' . $row['Specie'] . ' - ' . $row['DataAvvistamento'] .  '</p>';
+            $output .= '<p>' . $row['Nome'] . ' - ' . $row['Latitudine'] . ' - ' . $row['Longitudine'] . ' - ' . $row['Specie'] . ' - ' . $row['Descrizione'] . ' - ' . $row['DataAvvistamento'] .  '</p>';
         }
     } else {
         $output = 'Nessun risultato trovato';
