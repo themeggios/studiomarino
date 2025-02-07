@@ -20,7 +20,7 @@
         document.getElementById("txtHint").innerHTML = this.responseText;
       }
     };
-    xmlhttp.open("GET", "ricerca.php?query=" + str, true);
+    xmlhttp.open("GET", "public/ricerca.php?query=" + str, true);
     xmlhttp.send();
   }
 }
@@ -29,7 +29,7 @@
 <?php
 
 // connessione al database
-require "db.php";
+require "db/db.php";
 
 // prepara ed esegue la query
 $sql = "SELECT * FROM animalimarini;";

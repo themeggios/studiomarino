@@ -1,7 +1,7 @@
 <?php
 
 // connessione al database
-require "db.php";
+require "../db/db.php";
 
 if (isset($_GET['query'])) {
     $query = ($_GET['query']);
